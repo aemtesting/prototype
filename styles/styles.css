@@ -18,6 +18,11 @@
   --foreground-dark: #282828;
   --accent: #f58220;
 
+  --header-gradient: linear-gradient(
+    rgb(245, 130, 32) -18%,
+    rgb(176, 42, 48) 127%
+  );
+
   /* fonts */
   --body-font-family: muli, roboto, roboto-fallback;
   --heading-font-family: var(--body-font-family);
@@ -30,4 +35,13 @@ body {
   padding: 0;
   overflow-x: hidden;
   font-family: var(--body-font-family);
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
