@@ -3,7 +3,6 @@ import { loadFragment } from "../fragment/fragment.js";
 
 // media query match that indicates mobile/tablet width
 const isDesktop = window.matchMedia("(min-width: 900px)");
-
 // function closeOnEscape(e) {
 //   if (e.code === "Escape") {
 //     const nav = document.getElementById("nav");
@@ -128,6 +127,20 @@ export default async function decorate(block) {
     brandLink.className = "";
     brandLink.closest(".button-container").className = "";
   }
+
+  const listItems = nav.querySelectorAll(
+    "#nav .default-content-wrapper > ul > li",
+  );
+
+  listItems.forEach((item) => {
+    item.addEventListener("mouseenter", () => {
+      item.classList.add("active");
+    });
+
+    item.addEventListener("mouseleave", () => {
+      item.classList.remove("active");
+    });
+  });
 
   // const navSections = nav.querySelector(".nav-sections");
   // if (navSections) {
