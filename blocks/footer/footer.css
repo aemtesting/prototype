@@ -13,11 +13,11 @@ footer {
   width: 25%;
 }
 
-.default-content-wrapper > p {
+.footer .default-content-wrapper > p {
   font-size: 1.1rem;
 }
 
-ul {
+.footer ul {
   padding-left: 0;
   list-style-type: none;
   display: flex;
@@ -25,15 +25,15 @@ ul {
   row-gap: 0.5rem;
 }
 
-li {
+.footer li {
   font-size: 0.9rem;
 }
 
-li > a {
+.footer li > a {
   text-decoration: none;
   color: var(--foreground-dark);
 }
 
-li > a:hover {
+.footer li > a:hover {
   color: var(--accent);
 }

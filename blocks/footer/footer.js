@@ -13,14 +13,11 @@ export default async function decorate(block) {
   // Loop through the descendants to find .default-content-wrapper
   var contentWrapper = null;
   descendants.forEach(function (element) {
-    console.log("element", element);
     if (element.classList.contains("default-content-wrapper")) {
       contentWrapper = element;
       return; // Exit the loop once found
     }
   });
-
-  console.log("contentWrapper", contentWrapper);
 
   // load footer as fragment
   const footerMeta = getMetadata("footer");
