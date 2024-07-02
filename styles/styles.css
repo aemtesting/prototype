@@ -17,6 +17,8 @@
   --footer-background: #ece9e9;
   --foreground-dark: #282828;
   --accent: #f58220;
+  --accent-dark: #ec6608;
+  --dark-blue: #00305b;
 
   --header-gradient: linear-gradient(
     rgb(245, 130, 32) -18%,
@@ -35,6 +37,10 @@ body {
   padding: 0;
   overflow-x: hidden;
   font-family: var(--body-font-family);
+}
+
+body > main {
+  padding: 1rem 2rem;
 }
 
 ul {
